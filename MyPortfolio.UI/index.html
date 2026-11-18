@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Panagiotis Tzakopoulos — Software Engineer turning designs into production web platforms. React, Next.js, TypeScript, C#/.NET and Umbraco."
+    />
+    <title>Panagiotis Tzakopoulos — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <a class="nav__logo" href="#top" aria-label="Back to top">
+        <img src="/src/assets/icons/logo-dot.svg" width="10" height="10" alt="" />
+        <span>Panagiotis Tzakopoulos</span>
+      </a>
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Toggle menu"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__text">
+          <p class="status" data-reveal>
+            <img src="/src/assets/icons/status-dot.svg" width="8" height="8" alt="" />
+            Athens, GR · Open to relocation
+          </p>
+          <h1 class="hero__headline" data-reveal>
+            Software Engineer turning designs into
+            <span class="accent">production web platforms.</span>
+          </h1>
+          <p class="hero__intro" data-reveal>
+            3+ years delivering around 20 projects for enterprise clients like
+            Heron, Groupama and Ant1 Media Lab. React, Next.js and TypeScript on
+            the front, C#/.NET and Umbraco on the back.
+          </p>
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <a class="btn btn--secondary" href="#experience">View experience</a>
+          </div>
+          <ul class="chips" data-reveal>
+            <li class="chip">React</li>
+            <li class="chip">Next.js</li>
+            <li class="chip">TypeScript</li>
+            <li class="chip">Tailwind</li>
+            <li class="chip">C# / .NET</li>
+            <li class="chip">Umbraco</li>
+          </ul>
+        </div>
+
+        <div class="code-card" data-reveal aria-label="Profile summary as code">
+          <div class="code-card__bar">
+            <img src="/src/assets/icons/window-dot.svg" width="10" height="10" alt="" />
+            <img src="/src/assets/icons/window-dot.svg" width="10" height="10" alt="" />
+            <img src="/src/assets/icons/window-dot.svg" width="10" height="10" alt="" />
+            <span>profile.ts</span>
+          </div>
+<pre class="code-card__code"><code>const dev = {
+  role: <span class="accent">"Software Engineer"</span>,
+  focus: <span class="accent">"Frontend"</span>,
+  stack: [
+    <span class="accent">"React"</span>, <span class="accent">"Next.js"</span>,
+    <span class="accent">"TypeScript"</span>,
+    <span class="accent">".NET"</span>, <span class="accent">"Umbraco"</span>,
+  ],
+  location: <span class="accent">"Athens, GR"</span>,
+  relocation: <span class="primary">true</span>,
+};</code></pre>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats" aria-label="Highlights">
+        <div class="card stat" data-reveal>
+          <p class="stat__value">3+</p>
+          <p class="stat__label">Years of experience</p>
+        </div>
+        <div class="card stat" data-reveal>
+          <p class="stat__value">~20</p>
+          <p class="stat__label">Projects delivered</p>
+        </div>
+        <div class="card stat" data-reveal>
+          <p class="stat__value">2</p>
+          <p class="stat__label">Stacks: Frontend and .NET / Umbraco</p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <p class="section__label">01 / About</p>
+        <div class="section__body">
+          <h2 class="section__title" data-reveal>
+            Started in the frontend, grew into the full stack.
+          </h2>
+          <p class="body-text" data-reveal>
+            I began as a Frontend Developer at Threenitas and learned the
+            backend on the job, working in .NET and Umbraco. Today I move a
+            Figma design all the way to a deployed, production site:
+            pixel-accurate HTML and CSS, TypeScript on the client, and the
+            controllers, services and content models behind it.
+          </p>
+          <p class="body-text" data-reveal>
+            I use AI tooling such as Cursor, with MCP integrations for Figma and
+            Blender, to work faster, and I always review the result and run the
+            tests before it ships. I’m studying Informatics at the Hellenic Open
+            University, I’m open to relocation, and I want to keep learning new
+            technologies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <p class="section__label">02 / Skills</p>
+        <div class="section__body">
+          <h2 class="section__title section__title--sm" data-reveal>What I work with</h2>
+          <div class="grid-2">
+            <div class="card skill-card" data-reveal>
+              <h3 class="card__title">Frontend</h3>
+              <ul class="chips chips--tight">
+                <li class="chip">TypeScript</li>
+                <li class="chip">JavaScript (ES6+)</li>
+                <li class="chip">React.js</li>
+                <li class="chip">Next.js</li>
+                <li class="chip">HTML5</li>
+                <li class="chip">CSS3 / SCSS</li>
+                <li class="chip">Tailwind CSS</li>
+                <li class="chip">Figma-to-code</li>
+                <li class="chip">REST API integration</li>
+              </ul>
+            </div>
+            <div class="card skill-card" data-reveal>
+              <h3 class="card__title">Backend and CMS</h3>
+              <ul class="chips chips--tight">
+                <li class="chip">C# / .NET</li>
+                <li class="chip">Umbraco CMS</li>
+                <li class="chip">Document Types</li>
+                <li class="chip">Razor Views</li>
+                <li class="chip">Dictionaries</li>
+                <li class="chip">uSync</li>
+                <li class="chip">Umbraco Cloud</li>
+                <li class="chip">SQL Server (SSMS)</li>
+                <li class="chip">Node.js</li>
+              </ul>
+            </div>
+            <div class="card skill-card" data-reveal>
+              <h3 class="card__title">AI-assisted development</h3>
+              <ul class="chips chips--tight">
+                <li class="chip">Cursor AI</li>
+                <li class="chip">MCP: Cursor + Figma</li>
+                <li class="chip">MCP: Cursor + Blender</li>
+                <li class="chip">OpenAI GPT (React + Node.js)</li>
+              </ul>
+            </div>
+            <div class="card skill-card" data-reveal>
+              <h3 class="card__title">Tools and workflow</h3>
+              <ul class="chips chips--tight">
+                <li class="chip">Git</li>
+                <li class="chip">Bitbucket</li>
+                <li class="chip">Jira</li>
+                <li class="chip">Confluence</li>
+                <li class="chip">Postman</li>
+                <li class="chip">Cypress</li>
+                <li class="chip">Clockify</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <p class="section__label">03 / Experience</p>
+        <div class="section__body">
+          <h2 class="section__title section__title--sm" data-reveal>Where I’ve worked</h2>
+          <article class="card job-card" data-reveal>
+            <header class="job-card__header">
+              <div class="job-card__role">
+                <h3>Software Engineer</h3>
+                <p class="accent">Threenitas · Athens, Greece</p>
+              </div>
+              <p class="job-card__date">Aug 2023 – Present</p>
+            </header>
+            <ul class="job-card__list">
+              <li>
+                Delivered around 20 projects for enterprise clients, turning
+                Figma designs into responsive, production-ready interfaces with
+                HTML, CSS/SCSS and Tailwind.
+              </li>
+              <li>
+                Build features in TypeScript and JavaScript, with React and
+                Next.js on recent projects, integrated with backend APIs.
+              </li>
+              <li>
+                Develop .NET controllers, services and factories in Umbraco;
+                maintain Document Types, Razor Views, Dictionaries and uSync;
+                deploy to Umbraco Cloud.
+              </li>
+              <li>
+                Work in an Agile team with Git, Bitbucket, Jira and Confluence;
+                test APIs with Postman and run Cypress E2E tests.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="section" id="work">
+        <p class="section__label">04 / Work</p>
+        <div class="section__body">
+          <h2 class="section__title section__title--sm" data-reveal>Selected client work</h2>
+          <ul class="clients">
+            <li class="client" data-reveal>Heron</li>
+            <li class="client" data-reveal>Zenith</li>
+            <li class="client" data-reveal>MyZenith</li>
+            <li class="client" data-reveal>Papadopoulou</li>
+            <li class="client" data-reveal>Groupama</li>
+            <li class="client" data-reveal>Dannemann Platform</li>
+            <li class="client" data-reveal>Dannemann Group</li>
+            <li class="client" data-reveal>Ant1 Media Lab</li>
+          </ul>
+          <div class="project-placeholder" data-reveal>
+            <p class="project-placeholder__tag">Personal project</p>
+            <h3 class="project-placeholder__name">[YOUR PROJECT NAME]</h3>
+            <p class="project-placeholder__desc">
+              [One line on what it does and the stack] · GitHub link and live
+              demo go here once the project is ready.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <p class="section__label">05 / Education</p>
+        <div class="section__body">
+          <div class="grid-2">
+            <div class="card edu-card" data-reveal>
+              <p class="edu-card__date">Oct 2026 – Present</p>
+              <h3 class="edu-card__title">BSc, Informatics (in progress)</h3>
+              <p class="accent">Hellenic Open University, Greece</p>
+            </div>
+            <div class="card edu-card" data-reveal>
+              <p class="edu-card__date">Oct 2023</p>
+              <h3 class="edu-card__title">
+                Certificate, Web Design &amp; Development and Backend (Node.js)
+              </h3>
+              <p class="accent">SAE Institute Athens, Greece</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <p class="section__label">06 / Contact</p>
+        <h2 class="contact__title" data-reveal>Let’s build something together.</h2>
+        <p class="contact__text" data-reveal>
+          Open to new roles and to relocation. Greek native, English fluent.
+        </p>
+        <div class="btn-row" data-reveal>
+          <a class="btn btn--primary" href="mailto:tzakopoulosp@gmail.com">tzakopoulosp@gmail.com</a>
+          <a class="btn btn--secondary" href="tel:+306945582372">+30 6945582372</a>
+          <!-- TODO: replace with your LinkedIn profile URL -->
+          <a class="btn btn--secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span data-year>2026</span> Panagiotis Tzakopoulos</p>
+    </footer>
+  </body>
+</html>
