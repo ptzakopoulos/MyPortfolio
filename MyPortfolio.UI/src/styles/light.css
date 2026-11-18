@@ -1,0 +1,610 @@
+/* =========================================================
+   LIGHT theme — Figma: "Portfolio – Desktop v2 (Formal)"
+   ========================================================= */
+.view-light {
+  --ink: #0f1b2d;
+  --muted: #566175;
+  --rule: #d8d3c6;
+  --accent: #1f3a5f;
+  --on-ink: #f6f4ef;
+  --surface: #ffffff;
+  --paper: #f6f4ef;
+
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+
+  --menu-bg: var(--paper);
+  --menu-border: var(--rule);
+  --menu-fg: var(--ink);
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.view-light .lt-eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ---------- Nav ---------- */
+.lt-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px var(--pad-x);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.lt-nav__logo {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.view-light .lt-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.view-light .lt-nav__links a:not(.lt-btn):hover,
+.view-light .lt-nav__links a.is-active {
+  color: var(--ink);
+}
+
+/* ---------- Buttons ---------- */
+.lt-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.lt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.lt-btn--sm {
+  padding: 10px 18px;
+}
+
+.lt-btn--primary {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.lt-btn--primary:hover {
+  background: var(--accent);
+}
+
+.lt-btn--secondary {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.view-light .lt-nav__links .lt-btn--secondary {
+  color: var(--ink);
+}
+
+.lt-btn--secondary:hover {
+  background: var(--ink);
+  color: var(--on-ink) !important;
+}
+
+.lt-btn--inverse {
+  background: var(--on-ink);
+  color: var(--ink);
+}
+
+.lt-btn--inverse:hover {
+  background: #ffffff;
+}
+
+.lt-btn--outline-light {
+  border-color: var(--on-ink);
+  color: var(--on-ink);
+}
+
+.lt-btn--outline-light:hover {
+  background: var(--on-ink);
+  color: var(--ink);
+}
+
+/* ---------- Hero ---------- */
+.lt-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 96px;
+  padding: 104px var(--pad-x) 88px;
+}
+
+.lt-hero__text {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.lt-hero__headline {
+  font-family: var(--serif);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -0.64px;
+}
+
+.lt-hero__intro {
+  font-size: 19px;
+  line-height: 30px;
+  color: var(--muted);
+}
+
+.lt-glance {
+  flex-shrink: 0;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 32px 16px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.lt-glance dl > div {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.lt-glance dl > div:last-child {
+  border-bottom: 0;
+}
+
+.lt-glance dt {
+  width: 100px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.lt-glance dd {
+  flex: 1 1 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------- Stats ---------- */
+.lt-stats {
+  display: flex;
+  padding: 48px var(--pad-x);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.lt-stat {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lt-stat + .lt-stat {
+  padding-left: 40px;
+  border-left: 1px solid var(--rule);
+}
+
+.lt-stat__value {
+  font-family: var(--serif);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.lt-stat__label {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ---------- Sections ---------- */
+.lt-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 96px var(--pad-x);
+  border-top: 1px solid var(--rule);
+}
+
+.lt-section--no-rule {
+  border-top: 0;
+}
+
+.lt-section__label {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.lt-section__body {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.lt-section__body--tight {
+  gap: 24px;
+}
+
+.lt-title {
+  font-family: var(--serif);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+
+.lt-body {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--muted);
+}
+
+/* Expertise list */
+.lt-list__row {
+  display: flex;
+  gap: 32px;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 16px;
+}
+
+.lt-list__row:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.lt-list dt {
+  width: 220px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.lt-list dd {
+  flex: 1 1 0;
+  line-height: 26px;
+  color: var(--muted);
+}
+
+/* Experience */
+.lt-job {
+  display: flex;
+  gap: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+
+.lt-job__date {
+  width: 200px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.lt-job__detail {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lt-job__role {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.lt-job__company {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.lt-job__list {
+  list-style: disc;
+  padding-left: 25.5px;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--muted);
+}
+
+/* Clients */
+.lt-clients {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 32px;
+}
+
+.lt-clients li {
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  transition: border-color 0.25s ease;
+}
+
+.lt-clients li:hover {
+  border-color: var(--ink);
+}
+
+.lt-project {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  border: 1px dashed var(--rule);
+  border-radius: 4px;
+}
+
+.lt-project__name {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.lt-project__desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--muted);
+}
+
+/* Education */
+.lt-edu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 48px;
+}
+
+.lt-edu__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+
+.lt-edu__date {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.lt-edu__title {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.lt-edu__school {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* ---------- Contact ---------- */
+.lt-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 104px var(--pad-x);
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.view-light .lt-contact .lt-eyebrow {
+  color: var(--on-ink);
+}
+
+.lt-contact__title {
+  max-width: 900px;
+  font-family: var(--serif);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -0.64px;
+}
+
+.lt-contact__text {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+/* ---------- Footer ---------- */
+.lt-footer {
+  padding: 32px var(--pad-x);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1280px) {
+  .lt-hero {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .lt-glance {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lt-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .lt-section__label {
+    width: auto;
+  }
+
+  .lt-section__body {
+    width: 100%;
+  }
+
+  .lt-clients {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .lt-nav {
+    padding-block: 16px;
+  }
+
+  .view-light .lt-nav__links {
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .view-light .lt-nav__links:not(.is-open) {
+    display: none;
+  }
+
+  .view-light .lt-nav__links .lt-btn {
+    width: auto;
+    margin-top: 8px;
+    padding: 10px 18px;
+  }
+
+  .lt-hero {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+
+  .lt-hero__headline {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .lt-hero__intro {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .lt-glance {
+    padding: 24px 20px 8px;
+  }
+
+  .lt-stats {
+    flex-direction: column;
+    gap: 24px;
+    padding-block: 36px;
+  }
+
+  .lt-stat + .lt-stat {
+    padding-left: 0;
+    padding-top: 24px;
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .lt-stat__value {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .lt-section {
+    padding-block: 64px;
+  }
+
+  .lt-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .lt-body {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .lt-list__row,
+  .lt-job {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .lt-list dt,
+  .lt-job__date {
+    width: auto;
+  }
+
+  .lt-job__list {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .lt-clients li {
+    font-size: 20px;
+    padding: 16px 0;
+  }
+
+  .lt-edu {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .lt-contact {
+    padding-block: 72px;
+    gap: 24px;
+  }
+
+  .lt-contact__title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .lt-contact__text {
+    font-size: 17px;
+  }
+
+  .lt-contact .lt-btn-row {
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
